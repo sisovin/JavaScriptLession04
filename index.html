@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML + CSS + JavaScript</title>
+  <link rel="stylesheet" href="/src/style.css" />
+
+</head>
+
+<body
+  class="bg-primary max-h-full justify-center items-center h-full sm:h-full md:h-full sm:p-4 md:p-4 p-4 m-auto rounded-lg shadow-lg text-white font-pregular text-lg sm:overflow-scroll md:overflow-scroll overflow-scroll">
+  <div class="flex flex-col">
+    <header>
+      <div id="app"
+        class="h-full max-h-full p-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800">
+        <h2 class="text-2xl font-bold">
+          Lesson 04: HTML, Tailwind CSS, JavaScript
+        </h2>
+        <hr class="my-4" />
+        <div class="mt-6">
+          <button class="darkorange-button bg-orange-400" title="Good job!" onclick="alert('Good job!')">
+            Hello, World!
+          </button>
+          <p class="mt-4">
+            paragraph of
+            <button class="yellow-button bg-yellow-500">Hello!</button> text
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div
+          class="bg-primary dark:bg-gray-800 rounded-lg border border-gray-700 mt-3 p-4 flex flex-col items-center justify-center">
+          <h2 class="font-bold border-2 border-gray-400 bg-orange-500 w-full rounded text-white mb-4 text-center">
+            HTML - Hyper Text Markup Language
+          </h2>
+          <p>
+            HTML is the standard markup language for creating Web pages. HTML
+            stands for Hyper Text Markup Language. HTML describes the
+            structure of Web pages using markup. HTML elements are the
+            building blocks of HTML pages. HTML elements are represented by
+            tags. HTML tags label pieces of content such as "heading",
+            "paragraph", "table", and so on. Browsers do not display the HTML
+            tags, but use them to render the content of the page.
+          </p>
+          <h2 class="font-bold border-2 border-gray-400 bg-orange-500 w-full rounded text-white mb-4 text-center">
+            Tailwind CSS
+          </h2>
+          <p>
+            Tailwind CSS is a utility-first CSS framework for rapidly building
+            custom designs. Tailwind CSS is a highly customizable, low-level
+            CSS framework that gives you all of the building blocks you need
+            to build bespoke designs without any annoying opinionated styles
+            you have to fight to override. Tailwind CSS is composed of
+            multiple CSS classes that can be used to style your HTML elements.
+          </p>
+          <h2 class="font-bold border-2 border-gray-400 bg-orange-500 w-full rounded text-white mb-4 text-center">
+            JavaScript
+          </h2>
+          <p>
+            JavaScript is the programming language of the Web. JavaScript can
+            update and change both HTML and CSS. JavaScript can calculate,
+            manipulate and validate data. JavaScript can be used to create
+            interactive effects within web browsers. JavaScript is an
+            object-oriented programming language. JavaScript is a lightweight,
+            interpreted programming language. JavaScript is designed for
+            creating network-centric applications.
+          </p>
+        </div>
+        <section class="mt-3">
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 flex flex-col">
+            <h2 class="font-bold text-2xl font-pbold">
+              Lesson 04: Exercises
+            </h2>
+            <hr class="my-4" />
+            <h3 class="font-bold mb-3">Exercise 4a</h3>
+            <div class="flex flex-row gap-3 justify-center items-center">
+              <button class="click-button bg-white text-black">Click</button>
+            </div>
+          </div>
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 mt-1">
+            <h3 class="font-bold mb-3">Exercise 4b</h3>
+            <div class="flex flex-row gap-3 justify-center items-center">
+              <button class="click-button bg-slate-300 text-black">
+                Simon
+              </button>
+              <button class="click-button bg-sky-500 text-black">
+                chocolate
+              </button>
+            </div>
+          </div>
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 mt-1">
+            <h3 class="font-bold mb-3">Exercise 4c</h3>
+            <div class="flex flex-col gap-3">
+              <p>Hello, World!</p>
+            </div>
+          </div>
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 mt-1">
+            <h3 class="font-bold mb-3">Exercise 4d</h3>
+            <div class="flex flex-col gap-3">
+              <p>Hello, World!</p>
+              <p>
+                Today I went to the grocery store to buy some eggs and
+                vegetables.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 mt-1">
+            <h3 class="font-bold mb-3">Exercise 4e</h3>
+            <div class="flex flex-row justify-center items-center gap-3">
+              <button class="add-to-cart-button bg-yellow-400 text-black">
+                Add to cart
+              </button>
+              <button class="buy-now-button bg-orange-500 text-black">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 p-4 mt-1">
+            <h3 class="font-bold mb-3">Exercise 4f - 4g - 4i</h3>
+            <div class="flex flex-row justify-end items-end gap-3">
+              <button class="back-to-home-button bg-green-500 text-black"
+                onclick="window.location.href = `${window.location.origin}/src/4f.html`">
+                4f
+              </button>
+              <button class="back-to-home-button bg-sky-500 text-black"
+                onclick="window.location.href = `${window.location.origin}/src/4g.html`">
+                4g
+              </button>
+              <button class="back-to-home-button bg-orange-500 text-black"
+                onclick="window.location.href = `${window.location.origin}/src/4i.html`">
+                4i
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="p-4 flex flex-col items-start justify-start mt-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800">
+        <p class="font-bold hidden">Footer</p>
+        <p class="text-right">
+          Copyright &copy; <span class="text-red-500" id="year">2024</span>
+        </p>
+        <p class="text-right">All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // This is a comment
+    // This code creates a pop-up alert
+    // alert('Hello, World!');
+
+    /*
+    multi
+    line
+    comment
+    */
+    // This code logs a message to the console
+    console.log(2 + 2);
+    let sum = 2 + 2;
+    console.log(sum);
+    console.log('some' + 'text');
+  </script>
+</body>
+
+</html>
+
+<!-- type="module" src="/main.js" -->

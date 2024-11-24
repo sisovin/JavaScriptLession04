@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4f</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      .add-to-cart-button {
+        background-color: yellow;
+      }
+
+      .buy-now-button {
+        background-color: orange;
+      }
+      .back-to-home-button {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-primary max-h-full justify-center items-center h-full sm:h-full md:h-full sm:p-4 md:p-4 p-4 m-auto rounded-lg shadow-lg text-white font-pregular text-lg sm:overflow-scroll md:overflow-scroll overflow-scroll"
+  >
+    <div id="app" class="flex flex-col">
+      <header>
+        <div
+          class="h-full max-h-full p-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800"
+        >
+          <h2 class="text-2xl font-bold">Lesson 04: HTML, Tailwind CSS, JavaScript</h2>
+          <hr class="my-4" />
+          <div class="mt-6">
+            <p>
+              This exercise 4f is to add the HTML structure to exercise 4e such
+              adding a header, main, and footer. The header contains a title and
+              a paragraph. The main contains a section with a button to add to
+              cart and a button to buy now. The footer contains a paragraph with
+              the current year and a paragraph with the text "All Rights
+              Reserved".
+            </p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div
+            class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 mt-3 p-4"
+          >
+            <h2 class="font-bold">Exercise 4f</h2>
+            <div class="mt-6 flex flex-row justify-center items-center gap-3">
+              <button
+                class="add-to-cart-button text-black"
+                title="Add to cart"
+                onclick="alert('Added to cart!')"
+              >
+                Add to cart
+              </button>
+              <button
+                class="buy-now-button text-black"
+                title="Buy now"
+                onclick="alert('Buy now!')"
+              >
+                Buy now
+              </button>
+            </div>
+            <div class="mt-6 flex flex-row justify-end items-end">
+              <button
+                class="back-to-home-button text-black"
+                title="Back to home"
+                onclick="window.location.href = `${window.location.origin}/index.html`"
+              >
+                Back to home
+              </button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div
+          class="p-4 flex flex-col items-start justify-start mt-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800"
+        >
+          <p class="font-bold hidden">Footer</p>
+          <p class="text-right">
+            Copyright &copy; <span class="text-red-500" id="year">2024</span>
+          </p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

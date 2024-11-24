@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 4f</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    .add-to-cart-button {
+      background-color: yellow;
+    }
+
+    .buy-now-button {
+      background-color: orange;
+    }
+
+    .back-to-home-button {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-primary max-h-full justify-center items-center h-full sm:h-full md:h-full sm:p-4 md:p-4 p-4 m-auto rounded-lg shadow-lg text-white font-pregular text-lg sm:overflow-scroll md:overflow-scroll overflow-scroll">
+  <div id="app" class="flex flex-col">
+    <header>
+      <div
+        class="h-full max-h-full p-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800">
+        <h2 class="text-2xl font-bold">
+          Lesson 04: HTML, Tailwind CSS, JavaScript
+        </h2>
+        <hr class="my-4" />
+        <div class="mt-6">
+          <p>
+            This exercise 4i and 4j is to create a simple product page with a
+            button to add the product to the cart and another button to buy
+            the product. The buttons should have different colors. The "Add to
+            cart" button should have a yellow background color, the "Buy now"
+            button should have an orange background color, and the "Back to
+            home" button should have a green background color. When the "Add
+            to cart" button is clicked, an alert should be displayed with the
+            message "Added to cart!". When the "Buy now" button is clicked, an
+            alert should be displayed with the message "Buy now!".
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="bg-gray-700 dark:bg-gray-800 rounded-lg border border-gray-700 mt-3 p-4">
+          <h2 class="font-bold">Exercise 4i and 4j</h2>
+          <div class="flex justify-center items-center">
+            <div class="mt-6 border-2 border-gray-600 w-96 rounded-lg shadow-lg flex content-center">
+              <div class="p-4 mt-6 mb-6">
+                <div class="mb-6">
+                  <p>Adults Plain Cotton T-shirt</p>
+                  <p class="mt-4">Price: $7.99</p>
+                </div>
+                <div class="mt-12 mb-12">
+                  <!-- I added some extra spaces to make the code easier to read. -->
+                </div>
+                <div class="flex flex-row gap-2 mt-6">
+                  <button class="add-to-cart-button text-black" title="Add to cart" onclick="alert('Added')">
+                    Add to cart
+                  </button>
+                  <button class="buy-now-button text-black" title="Buy now" onclick="
+                    alert('Loading...');
+                    alert('Purchased');
+                  ">Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end items-end">
+            <button class="back-to-home-button text-black" title="Back to home"
+              onclick="window.location.href = `${window.location.origin}/index.html`">
+              Back to home
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="p-4 flex flex-col items-start justify-start mt-4 rounded-lg shadow border-2 border-gray-700 dark:border-gray-800 bg-gray-700 dark:bg-gray-800">
+        <p class="font-bold hidden">Footer</p>
+        <p class="text-right">
+          Copyright &copy; <span class="text-red-500" id="year">2024</span>
+        </p>
+        <p class="text-right">All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
